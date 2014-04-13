@@ -1,2 +1,2 @@
-roundcube_plugins
-=================
+roundcube-1.0rc
+=========
