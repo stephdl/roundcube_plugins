@@ -2,7 +2,7 @@ Summary: IMAP Client, roundcube installed in /opt/roundcube
 %define name roundcube_plugins
 Name: %{name}
 %define version 1.0
-%define release 2
+%define release 3
 Version: %{version}
 Release: %{release}%{?dist}
 License: GPL
@@ -11,7 +11,7 @@ Group: SMEserver/addon
 Source: %{name}-%{version}.tar.gz
 BuildArchitectures: noarch
 BuildRoot: /var/tmp/%{name}-%{version}
-Requires: e-smith-release >= 8.0
+Requires: e-smith-release >= 9.0
 Requires: roundcube >= 1.0
 Buildrequires: e-smith-devtools
 AutoReqProv: no
@@ -21,6 +21,9 @@ http://www.roundcube.net/
 Roundcube_plugins provide a commonway to install and update plugins to roundcube
 
 %changelog
+* Sun May 11 2014 stephane de labrusse <stephdl@de-labrusse.fr> 1.0-3
+- removed .htaccess
+
 * Sun May 11 2014 stephane de labrusse <stephdl@de-labrusse.fr> 1.0-2
 - Changed tasklist 0.9beta for table problem
 
